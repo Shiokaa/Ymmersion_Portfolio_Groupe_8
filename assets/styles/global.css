@@ -1,0 +1,68 @@
+/* Base Settings */
+html {
+  font-size: 16px; /* 1rem = 16px par défaut */
+}
+
+body {
+  font-family: "Poppins", Arial, sans-serif; /* Ajout d'Arial et sans-serif comme fallback */
+  line-height: 1.8;
+  color: #333;
+}
+
+/* Headings */
+h1 {
+  font-family: "Futura PT", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 3rem; /* 48px */
+  line-height: 1.2;
+  letter-spacing: -0.03125rem; /* -0.5px */
+}
+
+h2 {
+  font-family: "Futura PT", Arial, sans-serif;
+  font-weight: 600;
+  font-size: 2.25rem; /* 36px */
+  line-height: 1.3;
+  letter-spacing: -0.015625rem; /* -0.25px */
+}
+
+h3 {
+  font-family: "Poppins", "Helvetica Neue", Helvetica, sans-serif; /* Helvetica Neue et Helvetica en fallback */
+  font-weight: 500;
+  font-size: 1.75rem; /* 28px */
+  line-height: 1.4;
+  letter-spacing: 0; /* Pas de modification */
+}
+
+h4 {
+  font-family: "Poppins", "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem; /* 24px */
+  line-height: 1.5;
+  letter-spacing: 0.015625rem; /* 0.25px */
+}
+
+h5 {
+  font-family: "Futura PT", Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.25rem; /* 20px */
+  line-height: 1.6;
+  letter-spacing: 0; /* Pas de modification */
+}
+
+h6 {
+  font-family: "Poppins", "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 1rem; /* 16px */
+  line-height: 1.6;
+  letter-spacing: 0.03125rem; /* 0.5px */
+}
+
+/* Paragraph */
+p {
+  font-family: "Poppins", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 1rem; /* 16px */
+  line-height: 1.8;
+  letter-spacing: 0; /* Pas de modification */
+}
