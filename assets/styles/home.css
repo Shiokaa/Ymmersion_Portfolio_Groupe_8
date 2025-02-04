@@ -1,3 +1,12 @@
+:root {
+  --base-color: #fff;
+  --main-color: #262626;
+  --nav-color: #ebebeb;
+  --nav-pop-up-color: #2a2c24;
+  --nav-backsvg-color: #f0f0f6;
+  --nav-on-page-color: #d2d2eb;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -6,15 +15,25 @@
 
 body {
   display: flex;
-  color: #fff;
+  color: var(--base-color);
   height: 100vh;
+}
+
+.lightmode {
+  --base-color: #000;
+  --main-color: #ebebeb;
+  --nav-color: #262626;
+  --nav-pop-up-color: #fff;
+  --nav-on-page-color: #826d62;
+  --nav-backsvg-color: #464646;
 }
 
 /* -------------------MAIN-------------------*/
 main {
   width: 95%;
-  background-color: #262626;
+  background-color: var(--main-color);
   height: 100%;
+  position: fixed;
 }
 
 .container {
@@ -41,6 +60,7 @@ img {
   width: 200px;
   height: 200px;
   border-radius: 10%;
+  cursor: pointer;
 }
 
 .three {
@@ -52,7 +72,11 @@ img {
 nav {
   width: 5%;
   height: 100%;
-  background-color: #ebebeb;
+  background-color: var(--nav-color);
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1;
 }
 
 ul {
@@ -74,7 +98,7 @@ ul {
 
 .home-page {
   position: relative;
-  background-color: #fff;
+  background-color: var(--base-color);
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -88,7 +112,7 @@ ul {
 
 .challenge-page {
   position: relative;
-  background-color: #fff;
+  background-color: var(--nav-backsvg-color);
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -102,7 +126,7 @@ ul {
 
 .dashboard {
   position: relative;
-  background-color: #fff;
+  background-color: var(--nav-backsvg-color);
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -117,7 +141,7 @@ ul {
 .link-name {
   height: 25px;
   width: 80px;
-  background-color: #2a2c24;
+  background-color: var(--nav-pop-up-color);
   position: absolute;
   top: -110%;
   left: -50%;
@@ -144,7 +168,7 @@ ul {
   display: inline-block;
   height: 0;
   width: 0;
-  border-top: 15px solid #2a2c24;
+  border-top: 15px solid var(--nav-pop-up-color);
   border-right: 8px solid transparent;
   border-left: 8px solid transparent;
   visibility: hidden;
@@ -158,8 +182,16 @@ ul {
 }
 
 .isOnThePage {
-  background-color: #d2d2eb;
+  background-color: var(--nav-on-page-color);
   width: 40px;
   height: 40px;
   border-radius: 50%;
+}
+
+.svg-color-mode {
+  fill: var(--main-color);
+}
+
+.light-dark-mode {
+  cursor: pointer;
 }
