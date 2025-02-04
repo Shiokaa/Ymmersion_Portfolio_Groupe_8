@@ -20,8 +20,27 @@ darkmode.addEventListener("click", () => {
 });
 
 document.addEventListener("DOMContentLoaded", () => {
-  gsap.from(".top-left", {
-    x: -100, // Arrive depuis la gauche
+  gsap.from(".top-left-img", {
+    x: -200, // Arrive depuis la gauche
+    opacity: 0,
+    duration: 1.5,
+    ease: "power2.out",
+    stagger: 0.3, // Décale les animations si plusieurs éléments
+  });
+});
+document.addEventListener("DOMContentLoaded", () => {
+  gsap.from(".top-left-text", {
+    y: -500, // Arrive depuis la gauche
+    opacity: 0,
+    duration: 3,
+    ease: "power2.out",
+    stagger: 0.3, // Décale les animations si plusieurs éléments
+  });
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  gsap.from(".top-right-img", {
+    y: -200, // Arrive depuis la gauche
     opacity: 0,
     duration: 1.5,
     ease: "power2.out",
@@ -30,17 +49,17 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 document.addEventListener("DOMContentLoaded", () => {
-  gsap.from(".top-right", {
-    y: -150, // Arrive depuis la gauche
+  gsap.from(".top-right-text", {
+    x: 1000, // Arrive depuis la gauche
     opacity: 0,
-    duration: 1.5,
+    duration: 3,
     ease: "power2.out",
     stagger: 0.3, // Décale les animations si plusieurs éléments
   });
 });
 
 document.addEventListener("DOMContentLoaded", () => {
-  gsap.from(".bottom-left", {
+  gsap.from(".bottom-left-img", {
     y: 200, // Arrive depuis la gauche
     opacity: 0,
     duration: 1.5,
@@ -50,10 +69,30 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 document.addEventListener("DOMContentLoaded", () => {
-  gsap.from(".bottom-right", {
-    x: 250, // Arrive depuis la gauche
+  gsap.from(".bottom-left-text", {
+    x: -500, // Arrive depuis la gauche
+    opacity: 0,
+    duration: 3,
+    ease: "power2.out",
+    stagger: 0.3, // Décale les animations si plusieurs éléments
+  });
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  gsap.from(".bottom-right-img", {
+    x: 200, // Arrive depuis la gauche
     opacity: 0,
     duration: 1.5,
+    ease: "power2.out",
+    stagger: 0.3, // Décale les animations si plusieurs éléments
+  });
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  gsap.from(".bottom-right-text", {
+    y: 500, // Arrive depuis la gauche
+    opacity: 0,
+    duration: 3,
     ease: "power2.out",
     stagger: 0.3, // Décale les animations si plusieurs éléments
   });
@@ -85,7 +124,7 @@ document.querySelectorAll(".container").forEach((el, index, allContainers) => {
     });
 
     // Agrandit l'élément cliqué
-    gsap.to(el, { scale: 2, duration: 0.5, ease: "power2.out" });
+    gsap.to(el, { scale: 1.2, duration: 0.5, ease: "power2.out" });
 
     // Déplace les autres containers
     allContainers.forEach((other, i) => {

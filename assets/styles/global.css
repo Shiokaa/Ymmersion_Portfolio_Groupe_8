@@ -1,4 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:wght@200&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300&family=Sixtyfour&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:wght@200&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300&family=Sixtyfour&display=swap");
+
+@font-face {
+  font-family: "Single Case";
+  src: url("/assets/fonts/Single-Case/Single-Case.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Futura PT";
+  src: url("/assets/fonts/Futura-pt/");
+}
 
 html {
   font-size: 16px; /* 1rem = 16px par défaut */
@@ -7,7 +19,6 @@ html {
 * {
   font-family: "Poppins", serif;
 }
-
 
 body {
   font-family: "Poppins", Arial, sans-serif; /* Ajout d'Arial et sans-serif comme fallback */
@@ -33,7 +44,7 @@ h2 {
 }
 
 h3 {
-  font-family: "Poppins", "Helvetica Neue", Helvetica, sans-serif; /* Helvetica Neue et Helvetica en fallback */
+  font-family: "Single Case", "Poppins", "Helvetica Neue", Helvetica, sans-serif; /* Helvetica Neue et Helvetica en fallback */
   font-weight: 500;
   font-size: 1.75rem; /* 28px */
   line-height: 1.4;
