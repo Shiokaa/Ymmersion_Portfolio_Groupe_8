@@ -17,8 +17,9 @@
 
 body {
   display: flex;
+  flex-direction: column;
   color: var(--base-color);
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .lightmode {
@@ -36,8 +37,7 @@ body {
 main {
   width: 95%;
   background-color: var(--main-color);
-  height: 100%;
-  position: fixed;
+  height: 100vh;
 }
 
 .container {
@@ -213,3 +213,111 @@ ul {
 .light-dark-mode {
   cursor: pointer;
 }
+
+
+/* style du footer  */
+
+
+
+/* Footer Section */
+.footer-container {
+  background-color: #211e39;
+}
+
+.footer-title {
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: 15px;
+  margin-top: 15px;
+
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-link {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #6c757d;
+  font-size: 1.1rem;
+  transition: color 0.3s ease-in-out;
+}
+
+.footer-link:hover {
+  color: #3fff98;
+  transition: 1s;
+}
+
+.footer-divider {
+  width: 2px;
+  height: 20px;
+  background-color: #6c757d;
+  margin: 0 10px;
+}
+
+.footer-social {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.social-button {
+  border: none;
+  margin-top: 15px;
+  font-size: 1rem;
+  background-color: #fff;
+  padding: 11px 15px;
+  border-radius: 60%;
+  transition: transform 0.3s ease-in-out;
+}
+
+.social-button:hover {
+  transform: translateY(-5px);
+}
+
+.social-hackernews .icon-hackernews {
+  color: #3fff98;
+}
+
+.social-instagram .icon-instagram {
+  color: #ff00ee;
+}
+
+.social-github .icon-github {
+  color: #2d2d2d;
+}
+
+.social-hackernews:hover {
+  background-color: #211e39;
+  transition: 0.5s;
+}
+
+.social-instagram:hover {
+  background-color: #211e39;
+  transition: 0.5s;
+}
+
+.social-github:hover {
+  transition: 0.5s;
+  background-color: #211e39;
+}
+
+.footer-separator {
+  border-top: 1px solid #6c757d;
+  width: 80%;
+  margin: 20px auto;
+}
+
+.footer-text {
+  color: #6c757d;
+  font-size: 1rem;
+  text-align: center;
+}
+
+
+
+
+
