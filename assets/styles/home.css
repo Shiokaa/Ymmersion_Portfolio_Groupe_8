@@ -59,6 +59,16 @@ main {
   align-items: center;
   height: 50%;
 }
+.bottom-right-img {
+  height: 350px;
+  width: 350px;
+  background: center/cover no-repeat url("../img/tim.png");
+  cursor: pointer;
+}
+
+.imgChange {
+  background: center/cover no-repeat url("../img/timpd.png");
+}
 
 img {
   height: 350px;

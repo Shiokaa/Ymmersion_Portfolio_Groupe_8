@@ -9,9 +9,59 @@
 
 @font-face {
   font-family: "Futura PT";
-  src: url("/assets/fonts/Futura-pt/");
+  src: url("/assets/fonts/Futura-pt/FuturaCyrillicBold.ttf");
+  font-weight: normal;
+  font-style: normal;
 }
 
+@font-face {
+  font-family: "Futura PT";
+  src: url("/assets/fonts/Futura-pt/FuturaCyrillicBook.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Futura PT";
+  src: url("/assets/fonts/Futura-pt/FuturaCyrillicDemi.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Futura PT";
+  src: url("/assets/fonts/Futura-pt/FuturaCyrillicExtraBold.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Futura PT";
+  src: url("/assets/fonts/Futura-pt/FuturaCyrillicExtraBold.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Futura PT";
+  src: url("/assets/fonts/Futura-pt/FuturaCyrillicHeavy.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Futura PT";
+  src: url("/assets/fonts/Futura-pt/FuturaCyrillicLight.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Futura PT";
+  src: url("/assets/fonts/Futura-pt/FuturaCyrillicMedium.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
 html {
   font-size: 16px; /* 1rem = 16px par défaut */
 }

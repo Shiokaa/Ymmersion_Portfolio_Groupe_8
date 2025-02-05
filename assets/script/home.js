@@ -108,11 +108,19 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+const bottomRightImg = document.querySelector(".bottom-right-img");
+
+bottomRightImg.addEventListener("click", () => {
+  bottomRightImg.classList.add("imgChange");
+});
+
+bottomRightImg.addEventListener("mouseout", () => {
+  bottomRightImg.classList.remove("imgChange");
+});
+
 document.querySelectorAll(".container").forEach((el, index, allContainers) => {
-  const img = el.querySelector(".img"); // Récupère uniquement l'image de CE container
-
+  const img = el.querySelector(".img-container"); // Récupère uniquement l'image de CE container
   if (!img) return; // Si pas d'image, on évite une erreur
-
   img.addEventListener("click", () => {
     // Réinitialisation avant d'agrandir un seul container
     gsap.to(allContainers, {
