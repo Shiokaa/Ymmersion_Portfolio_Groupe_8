@@ -60,8 +60,8 @@ main {
   height: 50%;
 }
 .bottom-right-img {
-  height: 350px;
-  width: 350px;
+  height: 420px;
+  width: 420px;
   background: center/cover no-repeat url("../img/tim.png");
   cursor: pointer;
 }
@@ -71,7 +71,7 @@ main {
 }
 
 img {
-  height: 350px;
+  height: 430px;
   border-radius: 10%;
   cursor: pointer;
 }
@@ -91,6 +91,34 @@ nav {
   right: 0;
   z-index: 1;
 }
+
+.nav-img {
+  position: absolute;
+  top: 180px; /* Ajuste la distance depuis le haut */ /* Ajuste la distance depuis la droite */
+  width: 70px; /* Ajuste la taille */
+  right: 2.1vw;
+  height: 150px;
+  object-fit: cover; /* Ajuste l’image sans la déformer */
+  animation: slideIn 1s cubic-bezier( 1, 0.57, 0.42, 0.15 );
+}
+
+@keyframes slideIn {
+  0% {
+      transform: translateX(-100px); /* L’image démarre hors écran à gauche */
+      opacity: 0; /* Rend l’image invisible au départ */
+      z-index: 0;
+  }
+  80% {
+      transform: translateX(-20px); /* L’image revient à sa place */
+      opacity: .07; /* Rend l’image visible */
+  }
+  100% {
+      transform: translateX(0); /* L’image revient à sa place */
+      opacity: 1; /* Rend l’image visible */
+      z-index: 1;
+  }
+}
+
 
 ul {
   display: flex;
@@ -218,6 +246,10 @@ ul {
 
 /* Footer Section */
 
+
+footer {
+  position: relative
+}
 .footer-container {
   background-color: #211e39;
 }
@@ -227,6 +259,7 @@ ul {
   text-align: center;
   margin-bottom: 15px;
   margin-top: 15px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .footer-links {
@@ -307,6 +340,28 @@ ul {
   width: 80%;
   margin: 20px auto;
 }
+
+.footer-img {
+  position: absolute;
+  bottom: 30px;
+  right: 4vw;
+  width: 100px; /* Ajuste la taille selon ton besoin */
+  height: auto;
+
+  animation: slideOn 1s ease-in-out;
+}
+
+@keyframes slideOn {
+  from {
+      transform: translateX(100px); /* L’image démarre hors écran à gauche */
+      opacity: 0; /* Rend l’image invisible au départ */
+  }
+  to {
+      transform: translateX(0); /* L’image revient à sa place */
+      opacity: 1; /* Rend l’image visible */
+  }
+}
+
 
 .footer-text {
   color: #6c757d;
