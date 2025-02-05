@@ -2,68 +2,76 @@
 <html lang="fr">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
-    <link rel="stylesheet" href="assets/styles/global.css">
-    <link rel="stylesheet" href="assets/styles/home.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="assets/styles/global.css" />
+    <link rel="stylesheet" href="assets/styles/home.css" />
 </head>
 
 <body>
     <main>
         <div class="top">
-            <div class="container">
+            <div class="top-left container">
                 <div class="top-left-img img-container">
-                    <img src="assets/img/tom.png" class="img">
+                    <img src="/assets/img/tom.png" class="img" />
                 </div>
-                <div class="top-left-text text-container">
-                    <h3>Amaru</h3>
+                <div class="top-left-text">
+                    <h3>AMARU</h3>
                     <h3>Tom</h3>
-                    <p>Responsable du backend, il a grandement contribué <br> au frontend en HTML, CSS et JS.
-                        <br> Note : 2/2
+                    <p>
+                        Responsable du backend, il a grandement contribué <br />
+                        au frontend en HTML, CSS et JS. <br />
+                        Note : 2/2
                     </p>
                 </div>
             </div>
-            <div class="container">
+            <div class="top-right container">
                 <div class="top-right-img img-container">
-                    <img src="assets/img/tomy.png" class="img">
+                    <img src="/assets/img/tomy.png" class="img" />
                 </div>
-                <div class="top-right-text text-container">
-                    <h3>Ouadhi</h3>
+                <div class="top-right-text">
+                    <h3>OUADHI</h3>
                     <h3>Tomy</h3>
-                    <p>Developeur polyvalent, impliqué dans la construction du site,<br> avec une forte contribution au
-                        frontend.
-                        <br>
+                    <p>
+                        Developeur polyvalent ,mpliqué dans la construction du site,<br />
+                        avec une forte contribution au frontend.
+                        <br />
                         Note : 1/1
                     </p>
                 </div>
             </div>
         </div>
         <div class="bottom">
-            <div class="container">
-                <div class="bottom-left-text text-container">
-                    <h3>Bourdot</h3>
+            <div class="bottom-left container">
+                <div class="bottom-left-text">
+                    <h3>BOURDOT</h3>
                     <h3>Romain</h3>
-                    <p>Romain a joué un rôle actif dans le frontend et <br>a résolu plusieurs problèmes techniques.
-                        <br>
+                    <p>
+                        Romain a joué un rôle actif dans le frontend et <br />a résolu
+                        plusieurs problèmes techniques.
+                        <br />
                         Note : 0/2
                     </p>
                 </div>
                 <div class="bottom-left-img img-container">
-                    <img src="assets/img/romain.png" class="img">
+                    <img src="/assets/img/romain.png" class="img" />
                 </div>
             </div>
-            <div class="container">
-                <div class="bottom-right-text text-container">
-                    <h3>Champieux</h3>
+            <div class="bottom-right container">
+                <div class="bottom-right-text">
+                    <h3>CHAMPIEUX</h3>
                     <h3>Tim</h3>
-                    <p>Tim a apporté sa contribution au frontend, en prenant en charge <br> certaines sections, bien
-                        qu'il ait rencontré des difficultés à rester organisé.
-                        <br> Note : 0/2
+                    <p>
+                        Tim a apporté sa contribution au frontend, en prenant en charge
+                        <br />
+                        certaines sections, bien qu'il ait rencontré des difficultés à
+                        rester organisé. <br />
+                        Note : 0/2
                     </p>
                 </div>
-                <div class="bottom-right-img img-container">
-                </div>
+                <div class="bottom-right-img img-container"></div>
             </div>
         </div>
     </main>
@@ -114,7 +122,7 @@
                         <p>Epreuves</p>
                     </div>
                     <div class="triangle-code"></div>
-                    <a href="">
+                    <a href="epreuve.html">
                         <svg class="svg" width="24" height="24" viewBox="0 0 15 15" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <g clip-path="url(#clip0_1_43)">
@@ -129,7 +137,6 @@
                                 </clipPath>
                             </defs>
                         </svg>
-
                     </a>
                 </div>
                 <div class="dashboard">
@@ -137,7 +144,7 @@
                         <p>Dashboard</p>
                     </div>
                     <div class="triangle-code"></div>
-                    <a href="">
+                    <a href="dashbord.html">
                         <svg class="svg" width="24" height=" 24" viewBox="0 0 15 15" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <g clip-path="url(#clip0_1_56)">
@@ -155,12 +162,56 @@
                     </a>
                 </div>
             </div>
-
         </ul>
     </nav>
+
+    <!-- footer -->
+
+    <footer class="footer-container text-center py-4">
+        <h3 class="footer-title text-white pt-4" data-aos="fade-up">YMMERSION</h3>
+
+        <div class="footer-links mt-5" data-aos="fade-up">
+            <a href="#home" class="footer-link">AMARU</a>
+            <div class="footer-divider"></div>
+            <a href="#about" class="footer-link">OUADHI</a>
+            <div class="footer-divider"></div>
+            <a href="#service" class="footer-link">CHAMPIEUX</a>
+            <div class="footer-divider"></div>
+            <a href="#portfolio" class="footer-link">BOURDOT</a>
+        </div>
+
+        <div class="footer-social mt-5" data-aos="fade-up">
+            <button class="social-button social-hackernews"
+                onclick="window.location.href='https://www.ynov.com/campus/aix-en-provence';">
+                <ion-icon class="icon-hackernews" name="logo-hackernews"></ion-icon>
+            </button>
+
+            <button class="social-button social-instagram"
+                onclick="window.location.href='https://www.instagram.com/timoth3_chmpx/';">
+                <ion-icon class="icon-instagram" name="logo-instagram"></ion-icon>
+            </button>
+            <button class="social-button social-github"
+                onclick="window.location.href='https://github.com/Shiokaa/Ymmersion_Portfolio_Groupe_8';">
+                <ion-icon class="icon-github" name="logo-github"></ion-icon>
+            </button>
+        </div>
+
+        <hr class="footer-separator my-4" />
+        <p class="footer-text">
+            Copyright 2025 Portfolio Ymmersion | All Rights Reserved.
+        </p>
+    </footer>
 
 </body>
 <script src="assets/script/home.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init({ duration: 1000, offset: 50 });
+</script>
+<script src="js/script.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
 </html>
