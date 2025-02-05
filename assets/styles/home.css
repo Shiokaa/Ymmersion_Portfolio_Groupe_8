@@ -214,12 +214,10 @@ ul {
   cursor: pointer;
 }
 
-
 /* style du footer  */
 
-
-
 /* Footer Section */
+
 .footer-container {
   background-color: #211e39;
 }
@@ -229,7 +227,6 @@ ul {
   text-align: center;
   margin-bottom: 15px;
   margin-top: 15px;
-
 }
 
 .footer-links {
@@ -316,8 +313,3 @@ ul {
   font-size: 1rem;
   text-align: center;
 }
-
-
-
-
-
