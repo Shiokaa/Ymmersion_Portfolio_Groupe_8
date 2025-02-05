@@ -1,10 +1,12 @@
 :root {
   --base-color: #fff;
+  --secondary-color: #000;
   --main-color: #262626;
   --nav-color: #ebebeb;
   --nav-pop-up-color: #2a2c24;
   --nav-backsvg-color: #f0f0f6;
   --nav-on-page-color: #d2d2eb;
+  --nav-svg-color: #767676;
 }
 
 * {
@@ -22,11 +24,13 @@ body {
 
 .lightmode {
   --base-color: #000;
+  --secondary-color: #fff;
   --main-color: #ebebeb;
   --nav-color: #262626;
   --nav-pop-up-color: #fff;
   --nav-on-page-color: #826d62;
   --nav-backsvg-color: #464646;
+  --nav-svg-color: #d3d3d3;
 }
 
 /* -------------------MAIN-------------------*/
@@ -54,6 +58,16 @@ main {
   justify-content: space-around;
   align-items: center;
   height: 50%;
+}
+.bottom-right-img {
+  height: 350px;
+  width: 350px;
+  background: center/cover no-repeat url("../img/tim.png");
+  cursor: pointer;
+}
+
+.imgChange {
+  background: center/cover no-repeat url("../img/timpd.png");
 }
 
 img {
@@ -188,7 +202,12 @@ ul {
 }
 
 .svg-color-mode {
-  fill: var(--main-color);
+  fill: var(--nav-svg-color);
+}
+
+.home,
+.moon {
+  fill: var(--secondary-color);
 }
 
 .light-dark-mode {
