@@ -261,73 +261,93 @@
     
     /* style du footer  */
 
-    /* footer section starts */
-    footer{
-        background-color: #211e39;
-    }
-    
-    footer .link-group a{
-        margin-left: 10px;
-        margin-right: 10px;
-        text-decoration: none;
-        color: #6c757d;
-        font-size: 1.1rem;
-        margin-top: 1rem;
-    }
-    footer .link-group a:hover{
-        color: #ffffff;
-        transition: 1s;
-    }
-    .social-links button{
-        border: none;
-        margin-right: 1rem;
-        font-size: 1.2rem;
-        background-color: #fff;
-        padding: 14px 15px 10px 15px;
-    }
-    
-    .social-links button:hover{
-        color: #fff;
-        transform: translateY(-20px);
-        transition-duration: 1s;
-    }
-    .social-links .dribble:hover{
-        background-color: #211e39;
-    }
-    .social-links .whatsapp{
-        color: #25D366;
-    }
-    .social-links .whatsapp:hover{
-        background-color: #211e39;
-    }
-    .social-links .behance{
-        color: #255afc;
-    }
-    .social-links .behance:hover{
-        background-color: #211e39;
-    }
-    
-    /* styling back to top button */
-    #btn-back-to-top {
-        position: fixed;
-        bottom: 40px;
-        right: 40px;
-        display: none;
-        font-size: 1.4rem;
-        background-color: #fca61f;
-        color: #fff;
-        animation: pulse 3s infinite;
-    }
-    
-    .logoYnov {
-        color: #16a157;
-    }
-    
-    .logogit {
-        color: #2d2d2d;
-    }   
-    
-    .logoinsta {
-        color: #ff00ee;
-    }
-    
+    /* Footer Section */
+
+/* Footer Section */
+.footer-container {
+    background-color: #211e39;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.footer-title {
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap; /* Permet d'éviter les débordements */
+}
+
+.footer-link {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #6c757d;
+    font-size: 1.1rem;
+    margin-top: 1rem;
+}
+
+footer .link-group a:hover {
+    color: #ffffff;
+    transition: 1s;
+}
+
+/* Social Links */
+.social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.social-links button {
+    border: none;
+    margin: 0 10px;
+    font-size: 1.2rem;
+    background-color: #fff;
+    padding: 14px 15px 10px 15px;
+    transition: all 0.3s ease;
+}
+
+.social-links button:hover {
+    color: #fff;
+    transform: translateY(-5px); /* Effet plus subtil */
+    transition-duration: 0.5s;
+}
+
+.social-links .dribble:hover,
+.social-links .whatsapp:hover,
+.social-links .behance:hover {
+    background-color: #211e39;
+}
+
+.social-links .whatsapp {
+    color: #25D366;
+}
+
+.social-links .behance {
+    color: #255afc;
+}
+
+/* Footer Separator */
+.footer-separator {
+    border-top: 1px solid #6c757d;
+    width: 80%;
+    margin: 20px auto;
+}
+
+/* Footer Text */
+.footer-text {
+    color: #6c757d;
+    font-size: 1rem;
+    text-align: center;
+}
