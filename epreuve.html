@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Epreuves</title>
     <link rel="stylesheet" href="assets/styles/epreuve.css">
+    <link rel="stylesheet" href="assets/styles/global.css">
 </head>
 
 <body>
 
-    <div class="epreuve">
-        <div class="description-left">
+    <div class = "epreuve">
+        <div class ="description-left">
             <p>Champion : Timothé</p>
             <h1>Epreuve 1 </h1>
 
@@ -31,29 +32,82 @@
             <div class="image-container">
                 <img src="assets/img/CodeEp1.png" alt="CodeEpreuve1" id="CodeEp1">
             </div>
-            <h2>Résultat :</h2>
-            <p>Notre looser n’a donc obtenu aucun résultat ce gros fils de iench.</p>
+          
+            
             <h2>Leçons tirées : </h2>
             <p>Il a appris à faire attention aux erreurs les plus simples, celles auxquelles on ne pense pas. Il en tire
                 la conclusion qu’il doit avoir plus de rigueur dans son travail du html et du css et décide donc de
                 travailler un ses points faibles durant les vacances. </p>
 
         </div>
-        <div class="resultat-right">
+        <div class ="resultat-right">
             <div class="resultat-titre">
                 <h1>Resultat</h1>
-                <img src="" alt="iamge zebi">
+                <p>Notre looser n’a donc obtenu aucun résultat ce gros fils de iench.</p>                
             </div>
-
         </div>
     </div>
-    <div>
-        moncul
-        <h1>De la merde genre</h1>
+    
+    
+    <div class="epreuve">
+        <div class ="resultat-left">
+            <div class="resultat-titre">
+                <h1>Resultat</h1>
+                <img src="assets/img/ResEp2.png" alt="iamge zebi">
+                <p>Notre looser n’a donc obtenu aucun résultat ce gros fils de iench.</p>
+                
+            </div>
+        </div>
+        <div class ="description-right">
+            <p>Champion : Tomy</p>
+            <h1>Epreuve 2 </h1>
+            
+            <h2>Consigne : </h2>
+            <p>Notre champion avait pour consigne de réaliser un petit jeu en Golang. Le programme devait choisir un numéro entre 1 et 100 et le faire deviner à l’utilisateur. L’utilisateur tape un numéro et le programme répond plus haut, plus bas ou trouvé.</p>
+           
+            <h2>Logique et réflexion :</h2>
+            <p>Tout d’abord il fallait générer un nombre aléatoire que le joueur ai à trouver, c’est ce que notre champion fait dans les trois premières lignes du code. Il demande ensuite au joueur d’entrer un nombre, vérifie qu’il entre bien nombre, récupère la valeur et la compare avec le résultat, enfin il retourne une phrase en fonction du chiffre entré par l’utilisateur. Tant que le joueur n’a pas trouvé la solution le programme tourne. 
+                </p>
+            <div class="image-container">
+                <img src="assets/img/CodeEp2.webp" alt="CodeEpreuve1" id="CodeEp1">
+            </div>
+          
+            
+            <h2>Leçons tirées : </h2>
+            <p>La seule difficulté de notre champion a été de se souvenir de comment gérer la bibliothèque random et cette exercices a permis de lui faire un rappel.</p>
+        </div>
+
     </div>
 
+    <div class = "epreuve">
+        <div class ="description-left">
+            <p>Champion : Tom</p>
+            <h1>Epreuve 3 </h1>
 
+            <h2>Consigne : </h2>
+            <p>L’objectif était de programmer un générateur de mot de passe entre 8 et 16 caractères.</p>
+            
+            <h2>Logique et réflexion :</h2>
+            <p>Il demande tout d’abord à l’utilisateur d’entrer la longueur du mot de passe et lui demande tant que l’utilisateur n’entre pas une valeur entre 8 et 16. Il fait ensuite une boucle qui génère un caractère aléatoire le nombre de fois qu’il faut. Enfin il affiche le mot de passe.
+            </p>
+            <div class="image-container">
+                <img src="assets/img/CodeEp3.png" alt="CodeEpreuve1" id="CodeEp1">
+            </div>
+          
+            
+            <h2>Leçons tirées : </h2>
+            <p>Il a appris à utiliser Copilote de manière discrète.</p>
 
+        </div>
+        <div class ="resultat-right">
+            <div class="resultat-titre">
+                <h1>Resultat</h1>
+                <img src="assets/img/ResEp3.png" alt="iamge zebi">
+                <p>Notre looser n’a donc obtenu aucun résultat ce gros fils de iench.</p>
+                
+            </div>
+        </div>
+    </div>
 
     <nav>
         <ul>
@@ -74,7 +128,7 @@
                 </svg>
             </div>
             <div class="nav-icons">
-                <div class="home-page isOnThePage">
+                <div class="home-page ">
                     <div class="link-name">
                         <p>Accueil</p>
                     </div>
@@ -96,7 +150,7 @@
                         </svg>
                     </a>
                 </div>
-                <div class="challenge-page">
+                <div class="challenge-page isOnThePage">
                     <div class="link-name">
                         <p>Epreuves</p>
                     </div>
