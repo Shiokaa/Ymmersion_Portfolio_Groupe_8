@@ -216,100 +216,72 @@ ul {
 
 /* style du footer  */
 
-/* Footer Section */
-
-.footer-container {
+/* footer section starts */
+footer{
   background-color: #211e39;
 }
 
-.footer-title {
-  font-size: 1.8rem;
-  text-align: center;
-  margin-bottom: 15px;
-  margin-top: 15px;
-}
-
-.footer-links {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.footer-link {
-  margin: 0 10px;
+footer .link-group a{
+  margin-left: 10px;
+  margin-right: 10px;
   text-decoration: none;
   color: #6c757d;
   font-size: 1.1rem;
-  transition: color 0.3s ease-in-out;
+  margin-top: 1rem;
 }
-
-.footer-link:hover {
-  color: #3fff98;
+footer .link-group a:hover{
+  color: #ffffff;
   transition: 1s;
 }
-
-.footer-divider {
-  width: 2px;
-  height: 20px;
-  background-color: #6c757d;
-  margin: 0 10px;
-}
-
-.footer-social {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-}
-
-.social-button {
+.social-links button{
   border: none;
-  margin-top: 15px;
-  font-size: 1rem;
+  margin-right: 1rem;
+  font-size: 1.2rem;
   background-color: #fff;
-  padding: 11px 15px;
-  border-radius: 60%;
-  transition: transform 0.3s ease-in-out;
+  padding: 14px 15px 10px 15px;
 }
 
-.social-button:hover {
-  transform: translateY(-5px);
+.social-links button:hover{
+  color: #fff;
+  transform: translateY(-20px);
+  transition-duration: 1s;
+}
+.social-links .dribble:hover{
+  background-color: #211e39;
+}
+.social-links .whatsapp{
+  color: #25D366;
+}
+.social-links .whatsapp:hover{
+  background-color: #211e39;
+}
+.social-links .behance{
+  color: #255afc;
+}
+.social-links .behance:hover{
+  background-color: #211e39;
 }
 
-.social-hackernews .icon-hackernews {
-  color: #3fff98;
+/* styling back to top button */
+#btn-back-to-top {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  display: none;
+  font-size: 1.4rem;
+  background-color: #fca61f;
+  color: #fff;
+  animation: pulse 3s infinite;
 }
 
-.social-instagram .icon-instagram {
-  color: #ff00ee;
+.logoYnov {
+  color: #16a157;
 }
 
-.social-github .icon-github {
+.logogit {
   color: #2d2d2d;
-}
+}   
 
-.social-hackernews:hover {
-  background-color: #211e39;
-  transition: 0.5s;
-}
-
-.social-instagram:hover {
-  background-color: #211e39;
-  transition: 0.5s;
-}
-
-.social-github:hover {
-  transition: 0.5s;
-  background-color: #211e39;
-}
-
-.footer-separator {
-  border-top: 1px solid #6c757d;
-  width: 80%;
-  margin: 20px auto;
-}
-
-.footer-text {
-  color: #6c757d;
-  font-size: 1rem;
-  text-align: center;
+.logoinsta {
+  color: #ff00ee;
 }
