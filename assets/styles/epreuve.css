@@ -28,18 +28,18 @@ body {
 
 .description-left {
     width : 70% ;
-    background-color: #262626; /* Juste pour visualiser la div */ 
+    background-color: var(--main-color); /* Juste pour visualiser la div */ 
     height: 100%;
     display: flex;
     flex-direction: column;
     text-align: left;
     padding-top: 20px;
     margin-bottom: 20px;
-    border-top: 5px double rgb(255, 255, 255)
+    border-top: 5px double var(--base-color);
     
  }
  .description-left h1 {
-    color: white;
+    color: var(--base-color);
   
     margin: 0;
     padding: 0;
@@ -49,7 +49,7 @@ body {
 
  }
  .description-left p  {
-    color: white;
+    color: var(--base-color);
     font-size: 1em;
    
     padding: 0;
@@ -60,7 +60,7 @@ body {
  }
 
  .description-left h2 {
-    color: white;
+    color: var(--base-color);
     font-size: 1.5em;
     margin: 10px;
     padding: 0;
@@ -71,7 +71,7 @@ body {
  }
 
  .description-right h2 {
-  color: white;
+  color: var(--base-color);
   font-size: 1.5em;
   margin: 10px;
   padding: 0;
@@ -86,11 +86,11 @@ body {
     width: 30%;
     align-items: center;
     height: 100%;
-    /*background-color: #ffffff;*/
-    color: #262626;
+    background-color: var(--base-color);
+    color: var(--main-color);
     display: flex;
     justify-content: center; /* Centre horizontalement */
-    border-left: 5px double #262626;
+    border-left: 5px double var(--main-color);
 
    
       
@@ -121,7 +121,7 @@ body {
 }
 
  .resultat-titre {
-    color: #262626;
+    color: var(--main-color);
     font-size: 1.5em;
     margin: 10px;
     padding: 0;
@@ -135,23 +135,23 @@ body {
     width: 30%;
     align-items: center;
     height: 100%;
-    background-color: #ffffff;
-    color: #262626;
+    background-color: var(--base-color);
+    color: var(--main-color);
     display: flex;
     justify-content: center; /* Centre horizontalement */
-    border-right: 5px double #262626
+    border-right: 5px double var(--main-color);
  }
 
  .description-right{
   width : 70% ;
-  background-color: #262626; /* Juste pour visualiser la div */ 
+  background-color: var(--main-color); /* Juste pour visualiser la div */ 
   height: 100%;
   display: flex;
   flex-direction: column;
   text-align: left;
   padding-top: 20px;
   margin-bottom: 20px;
-  border-top: 5px double rgb(255, 255, 255)
+  border-top: 5px double var(--base-color);
  }
 
  .image-container img{
@@ -159,7 +159,7 @@ body {
  }
 
  .description-right h1 {
-  color: white;
+  color: var(--base-color);
 
   margin: 0;
   padding: 0;
@@ -169,7 +169,7 @@ body {
 
 }
 .description-right p  {
-  color: white;
+  color: var(--base-color);
   font-size: 1em;
  
   padding: 0;
@@ -221,7 +221,7 @@ body {
   }
   
   .lightmode {
-    --base-color: #000;
+    --base-color: #262626;
     --main-color: #ebebeb;
     --nav-color: #262626;
     --nav-pop-up-color: #fff;
