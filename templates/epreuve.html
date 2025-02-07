@@ -1,3 +1,4 @@
+{{define "challenge"}}
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -5,14 +6,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Epreuves</title>
-    <link rel="stylesheet" href="assets/styles/epreuve.css">
-    <link rel="stylesheet" href="assets/styles/global.css">
+    <link rel="stylesheet" href="./static/styles/epreuve.css">
+    <link rel="stylesheet" href="./static/styles/global.css">
 </head>
 
 <body>
 
-    <div class = "epreuve">
-        <div class ="description-left">
+    <div class="epreuve">
+        <div class="description-left">
             <p>Champion : Timothé</p>
             <h1>Epreuve 1 </h1>
 
@@ -20,7 +21,7 @@
             <p>L’objectif de l’épreuve était de réaliser en 15 minutes un dessin en html et css seulement le plus fidèle
                 possible a une image donnée :</p>
             <div class="image-container">
-                <img src="assets/img/Epreuve1Objectif.jpg" alt="ObjectifEpreuve1" id="ObjEp1">
+                <img src="./static/img/Epreuve1Objectif.jpg" alt="ObjectifEpreuve1" id="ObjEp1">
             </div>
             <h2>Logique et réflexion :</h2>
             <p>Malheureusement notre champion a fait dès le début une erreur stupide qui le pénalisa tout le long de
@@ -30,170 +31,187 @@
                 Cependant il a quand même commencé par créer toute les div correspondant à chaque carré sur le visage :
             </p>
             <div class="image-container">
-                <img src="assets/img/CodeEp1.png" alt="CodeEpreuve1" id="CodeEp1">
+                <img src="./static/img/CodeEp1.png" alt="CodeEpreuve1" id="CodeEp1">
             </div>
-          
-            
+
+
             <h2>Leçons tirées : </h2>
             <p>Il a appris à faire attention aux erreurs les plus simples, celles auxquelles on ne pense pas. Il en tire
                 la conclusion qu’il doit avoir plus de rigueur dans son travail du html et du css et décide donc de
                 travailler un ses points faibles durant les vacances. </p>
 
         </div>
-        <div class ="resultat-right">
+        <div class="resultat-right">
             <div class="resultat-titre">
                 <h1>Resultat</h1>
-                <p>Notre looser n’a donc obtenu aucun résultat ce gros fils de iench.</p>                
+                <p>Notre looser n’a donc obtenu aucun résultat ce gros fils de iench.</p>
             </div>
         </div>
     </div>
-    
-    
+
+
     <div class="epreuve">
-        <div class ="resultat-left">
+        <div class="resultat-left">
             <div class="resultat-titre">
                 <h1>Resultat</h1>
-                <img src="assets/img/ResEp2.png" alt="iamge zebi">
+                <img src="./static/img/ResEp2.png" alt="iamge zebi">
                 <p>Notre looser n’a donc obtenu aucun résultat ce gros fils de iench.</p>
-                
+
             </div>
         </div>
-        <div class ="description-right">
+        <div class="description-right">
             <p>Champion : Tomy</p>
             <h1>Epreuve 2 </h1>
-            
+
             <h2>Consigne : </h2>
-            <p>Notre champion avait pour consigne de réaliser un petit jeu en Golang. Le programme devait choisir un numéro entre 1 et 100 et le faire deviner à l’utilisateur. L’utilisateur tape un numéro et le programme répond plus haut, plus bas ou trouvé.</p>
-           
+            <p>Notre champion avait pour consigne de réaliser un petit jeu en Golang. Le programme devait choisir un
+                numéro entre 1 et 100 et le faire deviner à l’utilisateur. L’utilisateur tape un numéro et le programme
+                répond plus haut, plus bas ou trouvé.</p>
+
             <h2>Logique et réflexion :</h2>
-            <p>Tout d’abord il fallait générer un nombre aléatoire que le joueur ai à trouver, c’est ce que notre champion fait dans les trois premières lignes du code. Il demande ensuite au joueur d’entrer un nombre, vérifie qu’il entre bien nombre, récupère la valeur et la compare avec le résultat, enfin il retourne une phrase en fonction du chiffre entré par l’utilisateur. Tant que le joueur n’a pas trouvé la solution le programme tourne. 
-                </p>
+            <p>Tout d’abord il fallait générer un nombre aléatoire que le joueur ai à trouver, c’est ce que notre
+                champion fait dans les trois premières lignes du code. Il demande ensuite au joueur d’entrer un nombre,
+                vérifie qu’il entre bien nombre, récupère la valeur et la compare avec le résultat, enfin il retourne
+                une phrase en fonction du chiffre entré par l’utilisateur. Tant que le joueur n’a pas trouvé la solution
+                le programme tourne.
+            </p>
             <div class="image-container">
-                <img src="assets/img/CodeEp2.webp" alt="CodeEpreuve1" id="CodeEp1">
+                <img src="./static/img/CodeEp2.webp" alt="CodeEpreuve1" id="CodeEp1">
             </div>
-          
-            
+
+
             <h2>Leçons tirées : </h2>
-            <p>La seule difficulté de notre champion a été de se souvenir de comment gérer la bibliothèque random et cette exercices a permis de lui faire un rappel.</p>
+            <p>La seule difficulté de notre champion a été de se souvenir de comment gérer la bibliothèque random et
+                cette exercices a permis de lui faire un rappel.</p>
         </div>
 
     </div>
 
-    <div class = "epreuve">
-        <div class ="description-left">
+    <div class="epreuve">
+        <div class="description-left">
             <p>Champion : Tom</p>
             <h1>Epreuve 3 </h1>
 
             <h2>Consigne : </h2>
             <p>La consigne était de vérifier si un mot donné est un palindrome.</p>
-            
+
             <h2>Logique et réflexion :</h2>
-            <p>Notre champignon a tout d’abord créé deux variables une étant le mot à vérifier et une étant le mot a l’envers afin de voir s’il est égal au mot initial. Il fait ensuite une boucle qui parcours le mot initial en partant du dernier caractère, cette boucle ajoute chaque lettre donc en partant de la fin dans la variable mot à l’envers. Enfin il compare les deux variables et si elles sont égale alors le mot est un palindrome.
+            <p>Notre champignon a tout d’abord créé deux variables une étant le mot à vérifier et une étant le mot a
+                l’envers afin de voir s’il est égal au mot initial. Il fait ensuite une boucle qui parcours le mot
+                initial en partant du dernier caractère, cette boucle ajoute chaque lettre donc en partant de la fin
+                dans la variable mot à l’envers. Enfin il compare les deux variables et si elles sont égale alors le mot
+                est un palindrome.
             </p>
             <div class="image-container">
-                <img src="assets/img/CodeEp5.png" alt="CodeEpreuve1" id="CodeEp1">
+                <img src="./static/img/CodeEp5.png" alt="CodeEpreuve1" id="CodeEp1">
             </div>
-          
-            
+
+
             <h2>Leçons tirées : </h2>
             <p>Il se rappelle qu’il est le goat</p>
 
         </div>
-        <div class ="resultat-right">
+        <div class="resultat-right">
             <div class="resultat-titre">
                 <h1>Resultat</h1>
-                <img src="assets/img/ResEp5.png" alt="iamge zebi">
+                <img src="./static/img/ResEp5.png" alt="iamge zebi">
                 <p>Notre looser n’a donc obtenu aucun résultat ce gros fils de iench.</p>
-                
+
             </div>
         </div>
     </div>
 
     <div class="epreuve">
-        <div class ="resultat-left">
+        <div class="resultat-left">
             <div class="resultat-titre">
                 <h1>Resultat</h1>
-                
+
                 <p>Aucuns résultats il est probablement adopté.</p>
-                
+
             </div>
         </div>
-        <div class ="description-right">
+        <div class="description-right">
             <p>Champion : Romain</p>
             <h1>Epreuve 4 </h1>
-            
+
             <h2>Consigne : </h2>
-            <p>La consigne était d’écrire un programme qui analyse un texte et affiche le nombre de mot, le nombre de caractères et le mot le plus long.</p>
-           
+            <p>La consigne était d’écrire un programme qui analyse un texte et affiche le nombre de mot, le nombre de
+                caractères et le mot le plus long.</p>
+
             <h2>Logique et réflexion :</h2>
-            <p>Notre Champ de blé a d’abord demandé à l’utilisateur de taper un texte et il essaie ensuite de renvoyer la longueur du texte.
-                </p>
+            <p>Notre Champ de blé a d’abord demandé à l’utilisateur de taper un texte et il essaie ensuite de renvoyer
+                la longueur du texte.
+            </p>
             <div class="image-container">
-                <img src="assets/img/CodeEp4.png" alt="CodeEpreuve1" id="CodeEp1">
+                <img src="./static/img/CodeEp4.png" alt="CodeEpreuve1" id="CodeEp1">
             </div>
-          
-            
+
+
             <h2>Leçons tirées : </h2>
             <p>Il a une mauvaise mémoire </p>
         </div>
 
     </div>
 
-    <div class = "epreuve">
-        <div class ="description-left">
+    <div class="epreuve">
+        <div class="description-left">
             <p>Champion : Tom</p>
             <h1>Epreuve 5 </h1>
 
             <h2>Consigne : </h2>
             <p>L’objectif était de programmer un générateur de mot de passe entre 8 et 16 caractères.</p>
-            
+
             <h2>Logique et réflexion :</h2>
-            <p>Il demande tout d’abord à l’utilisateur d’entrer la longueur du mot de passe et lui demande tant que l’utilisateur n’entre pas une valeur entre 8 et 16. Il fait ensuite une boucle qui génère un caractère aléatoire le nombre de fois qu’il faut. Enfin il affiche le mot de passe.
+            <p>Il demande tout d’abord à l’utilisateur d’entrer la longueur du mot de passe et lui demande tant que
+                l’utilisateur n’entre pas une valeur entre 8 et 16. Il fait ensuite une boucle qui génère un caractère
+                aléatoire le nombre de fois qu’il faut. Enfin il affiche le mot de passe.
             </p>
             <div class="image-container">
-                <img src="assets/img/CodeEp3.png" alt="CodeEpreuve1" id="CodeEp1">
+                <img src="./static/img/CodeEp3.png" alt="CodeEpreuve1" id="CodeEp1">
             </div>
-          
-            
+
+
             <h2>Leçons tirées : </h2>
             <p>Il a appris à utiliser Copilote de manière discrète.</p>
 
         </div>
-        <div class ="resultat-right">
+        <div class="resultat-right">
             <div class="resultat-titre">
                 <h1>Resultat</h1>
-                <img src="assets/img/ResEp3.png" alt="iamge zebi">
+                <img src="./static/img/ResEp3.png" alt="iamge zebi">
                 <p>Notre looser n’a donc obtenu aucun résultat ce gros fils de iench.</p>
-                
+
             </div>
         </div>
     </div>
-    
+
     <div class="epreuve">
-        <div class ="resultat-left">
+        <div class="resultat-left">
             <div class="resultat-titre">
                 <h1>Resultat</h1>
-                
+
                 <p>Il a aussi perdu son résultat.</p>
-                
+
             </div>
         </div>
-        <div class ="description-right">
+        <div class="description-right">
             <p>Champion : Tim</p>
             <h1>Epreuve 6 </h1>
-            
+
             <h2>Consigne : </h2>
-            <p>Ligne consa éte dait crun éé progri quame évala lue sécuritun dé me dot passe. Tort d’about ie vérifon qua le longes tueur ieure supériest 8 a enson suite de regaron il si a y diffre ches in enfet de regaron il si contes dient symboles.</p>
-           
+            <p>Ligne consa éte dait crun éé progri quame évala lue sécuritun dé me dot passe. Tort d’about ie vérifon
+                qua le longes tueur ieure supériest 8 a enson suite de regaron il si a y diffre ches in enfet de regaron
+                il si contes dient symboles.</p>
+
             <h2>Logique et réflexion :</h2>
-            <p>Ouga bouga aga aga bouga aga bouga bouga agaga bougagagaga aga bouga gabougaagaga bouga 
-                </p>
+            <p>Ouga bouga aga aga bouga aga bouga bouga agaga bougagagaga aga bouga gabougaagaga bouga
+            </p>
             <div class="image-container">
-                
+
                 <p>Malheureusement le singe a perdu son code</p>
             </div>
-          
-            
+
+
             <h2>Leçons tirées : </h2>
             <p>Ouga bouga bouga ouga bouga.</p>
         </div>
@@ -224,11 +242,11 @@
                         <p>Accueil</p>
                     </div>
                     <div class="triangle-code"></div>
-                    <a href="index.html">
+                    <a href="/home">
                         <svg class="svg" width="24" height="24" viewBox="0 0 15 15" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <g clip-path="url(#clip0_1_27)">
-                                <path class="svg-color-mode"
+                                <path class="svg-color-mode "
                                     d="M11.7224 12.6289C11.7224 12.7838 11.6609 12.9323 11.5514 13.0419C11.4418 13.1514 11.2933 13.2129 11.1384 13.2129H2.96198C2.80708 13.2129 2.65853 13.1514 2.549 13.0419C2.43948 12.9323 2.37795 12.7838 2.37795 12.6289V7.37262H0.625854L6.65714 1.88974C6.76466 1.7919 6.90481 1.73769 7.05019 1.73769C7.19556 1.73769 7.33572 1.7919 7.44324 1.88974L13.4745 7.37262H11.7224V12.6289Z"
                                     fill="#2B2B2B" />
                             </g>
@@ -246,11 +264,11 @@
                         <p>Epreuves</p>
                     </div>
                     <div class="triangle-code"></div>
-                    <a href="epreuve.html">
+                    <a href="/challenge">
                         <svg class="svg" width="24" height="24" viewBox="0 0 15 15" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <g clip-path="url(#clip0_1_43)">
-                                <path class="svg-color-mode"
+                                <path class="svg-color-mode challenge"
                                     d="M10.3703 9.5609L7.63417 12.1726L4.8981 9.5609C2.84747 9.64577 1.20984 11.2473 1.20984 13.2239V13.4867C1.20984 14.2122 1.82646 14.8008 2.58648 14.8008H12.6819C13.4419 14.8008 14.0585 14.2122 14.0585 13.4867V13.2239C14.0585 11.2473 12.4209 9.64577 10.3703 9.5609ZM1.59989 2.96865L1.78344 3.00972V4.6085C1.58268 4.72348 1.43928 4.92333 1.43928 5.16424C1.43928 5.39421 1.57121 5.58584 1.75763 5.70356L1.31022 7.40911C1.26146 7.59801 1.37045 7.79238 1.52819 7.79238H2.72701C2.88475 7.79238 2.99374 7.59801 2.94498 7.40911L2.49757 5.70356C2.68399 5.58584 2.81592 5.39421 2.81592 5.16424C2.81592 4.92333 2.67252 4.72348 2.47176 4.6085V3.1685L4.36465 3.60378C4.118 4.07466 3.96313 4.60029 3.96313 5.16424C3.96313 7.09976 5.60649 8.66843 7.63417 8.66843C9.66185 8.66843 11.3052 7.09976 11.3052 5.16424C11.3052 4.60029 11.1532 4.07466 10.9037 3.60378L13.6656 2.96865C14.1876 2.84819 14.1876 2.22675 13.6656 2.10629L8.20491 0.846975C7.83207 0.762108 7.43915 0.762108 7.06631 0.846975L1.59989 2.10355C1.08078 2.22401 1.08078 2.84819 1.59989 2.96865Z"
                                     fill="#767676" />
                             </g>
@@ -269,7 +287,7 @@
                         <p>Dashboard</p>
                     </div>
                     <div class="triangle-code"></div>
-                    <a href="dashbord.html">
+                    <a href="/dashbord">
                         <svg class="svg" width="24" height=" 24" viewBox="0 0 15 15" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <g clip-path="url(#clip0_1_56)">
@@ -292,7 +310,8 @@
     </nav>
 
 </body>
-<script src="assets/script/home.js"></script>
+<script src="./static/script/home.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 
 </html>
+{{end}}
